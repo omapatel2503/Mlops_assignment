@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/IIT JODHPUR/MLOPS/Mlops_assignment/mlruns/241981576829951999/ac6ae42eef364f9caa8ca5b3dcc4c70e/artifacts
+end_time: 1727718412063
+entry_point_name: ''
+experiment_id: '241981576829951999'
+lifecycle_stage: active
+run_id: ac6ae42eef364f9caa8ca5b3dcc4c70e
+run_name: LinearRegression_BikeSharing
+run_uuid: ac6ae42eef364f9caa8ca5b3dcc4c70e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1727718408966
+status: 3
+tags: []
+user_id: DELL

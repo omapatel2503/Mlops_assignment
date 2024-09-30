@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/IIT JODHPUR/MLOPS/Mlops_assignment/mlruns/241981576829951999/7712a1f09a2d4c02b3b2f4612826b9fa/artifacts
+end_time: 1727718408956
+entry_point_name: ''
+experiment_id: '241981576829951999'
+lifecycle_stage: active
+run_id: 7712a1f09a2d4c02b3b2f4612826b9fa
+run_name: RandomForest_BikeSharing
+run_uuid: 7712a1f09a2d4c02b3b2f4612826b9fa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1727718404974
+status: 3
+tags: []
+user_id: DELL

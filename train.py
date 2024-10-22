@@ -33,51 +33,51 @@ experiment_name = "BikeSharing_Experiment"
 mlflow.set_experiment(experiment_name)  # Create or set the experiment
 
 # Train and log Random Forest Regressor
-with mlflow.start_run(run_name="RandomForest_BikeSharing"):
-    rf_model = RandomForestRegressor(n_estimators=100, random_state=42)
-    rf_model.fit(X_train, y_train)
-    y_pred_rf = rf_model.predict(X_test)
+# with mlflow.start_run(run_name="RandomForest_BikeSharing"):
+#     rf_model = RandomForestRegressor(n_estimators=100, random_state=42)
+#     rf_model.fit(X_train, y_train)
+#     y_pred_rf = rf_model.predict(X_test)
 
-    # Evaluate the model
-    mse_rf = mean_squared_error(y_test, y_pred_rf)
-    mae_rf = mean_absolute_error(y_test, y_pred_rf)
-    r2_rf = r2_score(y_test, y_pred_rf)
-    rmse_rf = mean_squared_error(y_test, y_pred_rf, squared=False)  # RMSE
+#     # Evaluate the model
+#     mse_rf = mean_squared_error(y_test, y_pred_rf)
+#     mae_rf = mean_absolute_error(y_test, y_pred_rf)
+#     r2_rf = r2_score(y_test, y_pred_rf)
+#     rmse_rf = mean_squared_error(y_test, y_pred_rf, squared=False)  # RMSE
 
-    print(f'Random Forest MSE: {mse_rf}')
-    print(f'Random Forest MAE: {mae_rf}')
-    print(f'Random Forest R²: {r2_rf}')
-    print(f'Random Forest RMSE: {rmse_rf}')
+#     print(f'Random Forest MSE: {mse_rf}')
+#     print(f'Random Forest MAE: {mae_rf}')
+#     print(f'Random Forest R²: {r2_rf}')
+#     print(f'Random Forest RMSE: {rmse_rf}')
 
-    # Log metrics and model in MLflow
-    mlflow.log_metric("mse", mse_rf)
-    mlflow.log_metric("mae", mae_rf)
-    mlflow.log_metric("r2", r2_rf)
-    mlflow.log_metric("rmse", rmse_rf)
-    mlflow.sklearn.log_model(rf_model, "RandomForest_Model")
+#     # Log metrics and model in MLflow
+#     mlflow.log_metric("mse", mse_rf)
+#     mlflow.log_metric("mae", mae_rf)
+#     mlflow.log_metric("r2", r2_rf)
+#     mlflow.log_metric("rmse", rmse_rf)
+#     mlflow.sklearn.log_model(rf_model, "RandomForest_Model")
 
-# Train and log Linear Regression Model
-with mlflow.start_run(run_name="LinearRegression_BikeSharing"):
-    lr_model = LinearRegression()
-    lr_model.fit(X_train, y_train)
-    y_pred_lr = lr_model.predict(X_test)
+# # Train and log Linear Regression Model
+# with mlflow.start_run(run_name="LinearRegression_BikeSharing"):
+#     lr_model = LinearRegression()
+#     lr_model.fit(X_train, y_train)
+#     y_pred_lr = lr_model.predict(X_test)
 
-    # Evaluate the model
-    mse_lr = mean_squared_error(y_test, y_pred_lr)
-    mae_lr = mean_absolute_error(y_test, y_pred_lr)
-    r2_lr = r2_score(y_test, y_pred_lr)
-    rmse_lr = mean_squared_error(y_test, y_pred_lr, squared=False)  # RMSE
+#     # Evaluate the model
+#     mse_lr = mean_squared_error(y_test, y_pred_lr)
+#     mae_lr = mean_absolute_error(y_test, y_pred_lr)
+#     r2_lr = r2_score(y_test, y_pred_lr)
+#     rmse_lr = mean_squared_error(y_test, y_pred_lr, squared=False)  # RMSE
 
-    print(f'Linear Regression MSE: {mse_lr}')
-    print(f'Linear Regression MAE: {mae_lr}')
-    print(f'Linear Regression R²: {r2_lr}')
-    print(f'Linear Regression RMSE: {rmse_lr}')
+#     print(f'Linear Regression MSE: {mse_lr}')
+#     print(f'Linear Regression MAE: {mae_lr}')
+#     print(f'Linear Regression R²: {r2_lr}')
+#     print(f'Linear Regression RMSE: {rmse_lr}')
 
-    # Log metrics and model in MLflow
-    mlflow.log_metric("mse", mse_lr)
-    mlflow.log_metric("mae", mae_lr)
-    mlflow.log_metric("r2", r2_lr)
-    mlflow.log_metric("rmse", rmse_lr)
-    mlflow.sklearn.log_model(lr_model, "LinearRegression_Model")
+#     # Log metrics and model in MLflow
+#     mlflow.log_metric("mse", mse_lr)
+#     mlflow.log_metric("mae", mae_lr)
+#     mlflow.log_metric("r2", r2_lr)
+#     mlflow.log_metric("rmse", rmse_lr)
+#     mlflow.sklearn.log_model(lr_model, "LinearRegression_Model")
 
 # End of the script

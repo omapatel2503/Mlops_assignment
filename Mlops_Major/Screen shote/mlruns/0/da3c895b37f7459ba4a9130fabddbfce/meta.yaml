@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/da3c895b37f7459ba4a9130fabddbfce/artifacts
+end_time: 1731394854256
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: da3c895b37f7459ba4a9130fabddbfce
+run_name: RandomForest Classifier On iris data
+run_uuid: da3c895b37f7459ba4a9130fabddbfce
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1731394848880
+status: 4
+tags: []
+user_id: DELL

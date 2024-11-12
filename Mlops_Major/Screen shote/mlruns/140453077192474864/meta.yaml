@@ -1,0 +1,6 @@
+artifact_location: file:///D:/IIT JODHPUR/MLOPS/Mlops_Major/mlruns/140453077192474864
+creation_time: 1731395180622
+experiment_id: '140453077192474864'
+last_update_time: 1731395180622
+lifecycle_stage: active
+name: Iris_ClassificationExperiment

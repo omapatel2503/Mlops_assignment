@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/IIT JODHPUR/MLOPS/Mlops_Major/mlruns/140453077192474864/ec6bda4e26d14636b37da37abdffecdd/artifacts
+end_time: 1731395186398
+entry_point_name: ''
+experiment_id: '140453077192474864'
+lifecycle_stage: active
+run_id: ec6bda4e26d14636b37da37abdffecdd
+run_name: RandomForest Classifier On iris data
+run_uuid: ec6bda4e26d14636b37da37abdffecdd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1731395181438
+status: 3
+tags: []
+user_id: DELL
